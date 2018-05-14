@@ -1,0 +1,6 @@
+<% @fridge.each do |fridge| %>
+    <h1> Fridge </h1>
+    <a href="/fridge/<%=fridge.id%>"><h3>Location: <%= fridge.location %></h3></a>
+<% end %>
+
+<a href="/fridge/new"><button> Add New Fridge </button></a>
